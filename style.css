@@ -1,0 +1,542 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+
+
+body {
+    
+    padding: 10px;
+}
+
+header {
+    background-image: url('/1.jpg');
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+    height: 150px;
+    position: relative;
+    background-color: rgb(240, 238, 238);
+    margin-bottom: 15px;
+}
+
+.overlay {
+    position: absolute;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    height: 150px;
+    right: 0;
+    bottom: 0;
+    padding: 0 !important;
+    margin: 0 !important;
+    background-color: rgba(196, 194, 194, 0.3);
+}
+
+nav {
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 0;
+    z-index: 2;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 60px 0 60px;
+}
+
+nav li {
+    list-style: none;
+    display: inline-block;
+    padding: 10px;
+    padding-left: 10px;
+}
+
+nav ul span {
+    padding-left: 5px;
+}
+
+li a {
+    padding: 5px;
+    background-color: #fff;
+    text-decoration: none;
+    border-radius: 2px;
+    color: teal;
+}
+
+li a:hover {
+    background-color: teal;
+    color: white;
+}
+
+nav img {
+    width: 180px;
+}
+
+nav h2 {
+    color: ;
+
+}
+
+.cart ion-icon {
+    vertical-align: bottom;
+    font-size: 20px;
+    padding-right: 5px;
+}
+
+.cart a {
+    background-color: teal;
+    color: #fff;
+    cursor: pointer;
+    text-decoration: none;
+    border-radius: 2px;
+}
+.new-intro {
+    display: flex;
+    flex-direction: column;
+}
+.new-intro h2 {
+    text-align: center;
+    font-size: 2rem;
+    margin-bottom: 15px;
+    margin-top: 30px;
+}
+
+.new-intro #tagline {
+    text-align: center;
+    margin-bottom: 35px;
+}
+.service {
+    display: flex;
+    justify-content: space-around;    
+}
+
+.service h5 {
+    border: 1px solid teal;
+    padding: 10px;
+    border-radius: 20px;
+    color: teal;
+    font-size: 1.1rem;
+    margin-bottom: 30px;
+}
+
+.service h5:hover {
+    color: white;
+    background-color: teal;
+}
+
+.new-intro p {
+    font-size: 1.1rem;
+    text-align: center;
+    margin-bottom: 15px;
+    
+}
+
+.card {
+    display:;
+    justify-content: space-around;
+    padding: 14px;
+
+}
+
+
+.hoodie, .sneaker {
+    display: flex;
+    text-align: cente;
+    justify-content: center;
+    margin: 10px;
+    padding: 10px;
+    border-radius: 5px;
+    gap: 35px;
+}
+
+.hoodie-content {
+    display: flex;
+    flex-direction: column;
+    box-shadow: 2px 2px 2px 3px;
+    padding: 10px;
+    align-items: center;
+    justify-content: center;
+    width: 190px;
+    border-radius: 5px;
+}
+
+.hoodie img, .sneaker img {
+    max-width: ;
+    width: 170px;
+    height: auto;
+    border-radius: 5px;
+    
+}
+
+h3 {
+    margin: 5px 0;
+}
+
+.add-cart {
+    display: inline-block;
+    background-color: teal;
+    color: #fff;
+    text-align: center;
+    padding: 5px;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+/*section to be displayed when hovered*/
+.content-section {
+    display: ;
+    background-color: gray;
+    margin: 40px;
+    border: dashed;
+}
+
+.hoodie-section-content,
+.sneaker-section-content,
+.sweatpant-section-content,
+.tshirt-section-content,
+.underwear-section-content {   
+    
+    display: flex;
+    text-align: cente;
+    justify-content: center;
+    margin: 50px;
+    padding: 10px;
+    border-radius: 5px;
+    gap: 35px;
+}
+
+.HOODIE,
+.SNEAKER,
+.SWEATPANT,
+.TSHIRT,
+.UNDERWEAR {
+
+    display: flex;
+    flex-direction: column;
+    box-shadow: 2px 2px 2px 3px;
+    padding: 10px;
+    align-items: center;
+    justify-content: center;
+    width: 210px;
+    border-radius: 5px;
+
+}
+
+
+.HOODIE img,
+.SNEAKER img,
+.SWEATPANT img,
+.TSHIRT img,
+.UNDERWEAR img {
+    width: 170px;
+    height: 190px;
+    border-radius: 5px;
+}
+
+.main-container  {
+
+    text-align: center; 
+    display: flex; 
+    flex-direction: column;  
+}
+.main-container #new {
+    letter-spacing: 3px;
+    border: 1px solid teal;
+    padding: 10px;
+    border-radius: 20px;
+    color: teal;
+    font-size: 1.1rem;
+    text-align: center;
+    margin: auto;
+}
+
+.main-container #newtagline {
+    letter-spacing: -1px;
+    margin-bottom: 20px;
+    margin-top: 25px;
+}
+
+.container,
+.products-container {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 2px 2px 2px 3px;
+    padding: 15px;
+    border: dashed;
+    border: 1px solid teal;
+    margin: px;
+    background-color:;
+    margin-top: 10px;
+}
+
+.content {
+    display: flex;
+    gap: 10px;
+    margin: 15px;
+}
+
+.image {
+    width: 30%;
+    margin: 1%;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid gray;
+    padding: 10px;
+    box-shadow: 2px 2px 2px 3px;
+    width: 190px;
+    border-radius: 20px;
+}
+
+
+
+.image img {
+    width: 170px;
+    height: auto;
+    border-radius: 30px;
+}
+
+.image h3 {
+    font-size: 1.2em;
+}
+
+.image h3:nth-child(3) {
+    color: black; 
+    margin-bottom: 10px;
+}
+
+
+
+.image a {
+    display: inline-block;
+    background-color: teal;
+    color: #fff;
+    text-align: center;
+    padding: 5px;
+    text-decoration: none;
+    border-radius: 5px;
+    padding: 10px;
+}
+
+.image a:hover {
+    background-color: purple;
+    color: white;
+    opacity: 1;    
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+/* Media query for smaller screens */
+@media (max-width: 768px) {
+    .container {
+        display: block;
+    }
+
+    .image {
+        width: 100%;
+        margin: 0 0 20px 0;
+        border: none;
+    }
+}
+
+
+/*------------------CART PAGE-----------------------*/
+
+.products-container {
+    max-width: 650px;
+    justify-content: space-around;
+    margin: 0 auto;
+    margin-top: 50px;
+}
+
+.products-container ion-icon {
+    color: teal;
+    font-size: 25px;
+    margin-left: ;
+    margin-right: ;
+    cursor: pointer;
+    width: 30px;
+}
+
+
+
+.product-header {
+    width: 100%;
+    max-width: 650px;
+    display: flex;
+    justify-content: flex-start;
+    border-bottom: 4px solid lightgray;
+    margin: 0 auto;
+}
+
+h5 {
+}
+
+.product-title {
+    width: 45%;
+    padding: 17px 0;
+}
+
+.price {
+    width: 15%;
+    display: flex;
+    align-items: center;
+    border-bottom: 1px solid lightgray;
+    padding: 20px;
+    height: 65px;
+    
+}
+
+.total {
+    width: 10%;
+    border-bottom: 1px solid lightgray;
+    display: flex;
+    align-items: center;
+    padding: 20px;
+    height: 65px;
+    
+}
+
+.quantity {
+    width: 30%;
+    border-bottom: 1px solid lightgray;
+    display: flex;
+    align-items: center;
+    padding: 17px;
+    height: 65px;
+    
+}
+
+.product {
+    width: 45%;
+    display: flex;
+    justify-content:space-evenly;
+    align-items: center;
+    padding: 10px 0;
+    border-bottom: 1px solid lightgray;
+
+    
+
+}
+
+/*remember to add tgis div in javascript */
+
+.xxx {
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    width: 650px;
+    padding: 15px;
+}
+
+.products {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.products img {
+    width: 45px;
+    border-radius: 6px;
+    box-shadow: 0px 0px 10px;
+}
+
+
+#x {
+    padding: 20px 0;
+}
+
+.basketTotalContainer {
+    display: flex;
+    justify-content: end;
+    width: 100%;
+    padding: 10px 0;
+}
+
+.basketTotalTitle {
+    width: 100%;
+}
+
+.basketTotal {
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.basketTotalContainer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.basketTotalTitle, .basketTotal {
+    margin: 0;
+    color: green;
+
+
+}
+
+.checkoutButton {
+    background-color: teal; 
+    color: white; 
+    padding: 10px 15px; 
+    border: none; 
+    border-radius: 5px;
+    cursor: pointer;
+    width: 100%;
+    font-size: 1rem;
+}
+
+
+/*slider section*/
+
+.hide h2 {
+    letter-spacing: 3px;
+    border: 1px solid teal;
+    padding: 10px;
+    border-radius: 20px;
+    color: teal;
+    font-size: 1.1rem;
+    text-align: center;
+    margin: auto;
+    height: auto;
+    width: fit-content;
+}
+
+#tshirt {
+    background-color: rgb(247, 249, 250);
+    padding-top: 10px;
+    padding-bottom: 1px;
+}
+
+#hoodie {
+    background-color: beige;
+    padding-top: 10px;
+    padding-bottom: 1px;
+}
+
+#sneaker {
+    background-color: rgb(248, 248, 240);
+    padding-top: 10px;
+    padding-bottom: 1px;
+}
+
+#sweatpant {
+    padding-top: 10px;
+}
+
+#underwear {
+    padding-top: 10px;
+}
+
+
+
+
